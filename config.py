@@ -20,15 +20,15 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "13084577"))
 API_HASH = environ.get("API_HASH", "1c0b20897a5fd2a674db1fa45d4c1a96")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7867859050:AAHqHLeX7evQwkl1IL4Ht89eDYStv80vXtY")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1298304662').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "HNGK_official_bot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "Hanagaki_File_Stream_Bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
-CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
@@ -70,7 +70,7 @@ WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or Fal
 WEBSITE_URL = environ.get("WEBSITE_URL", "https://takamichikunofficial.blogspot.com/2024/10/takimichi.html") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
